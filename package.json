@@ -1,0 +1,23 @@
+{
+  "name": "TKDLeonesBlancos-LandingPage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./src/scss:./public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllanDev15/TKDLeonesBlancos-LandingPage.git"
+  },
+  "keywords": [],
+  "author": "Allan Atzin Flores De la Serna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllanDev15/TKDLeonesBlancos-LandingPage/issues"
+  },
+  "homepage": "https://github.com/AllanDev15/TKDLeonesBlancos-LandingPage#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}
