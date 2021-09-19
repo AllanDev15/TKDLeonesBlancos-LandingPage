@@ -1,1 +1,16 @@
-@use '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+$navbar-light-color: $black;
+$navbar-light-hover-color: $black;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.navbar {
+  background-color: rgba($light, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.nav-link {
+  font-size: 18px;
+}
