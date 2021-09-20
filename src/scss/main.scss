@@ -1,16 +1,30 @@
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';
 
-$navbar-light-color: $black;
-$navbar-light-hover-color: $black;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 .navbar {
-  background-color: rgba($light, 0.6);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
 }
 
 .nav-link {
   font-size: 18px;
+}
+
+.header {
+  background-image: url('../assets/img/hero.png');
+  background-size: cover;
+  background-position: center center;
+
+  &__title {
+    color: $black;
+
+    div {
+      background-color: rgba($light, 0.2);
+      backdrop-filter: blur(6px);
+    }
+  }
 }
