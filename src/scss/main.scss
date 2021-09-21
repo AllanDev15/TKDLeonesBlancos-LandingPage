@@ -1,10 +1,36 @@
 @import '../../node_modules/bootstrap/scss/functions';
+
+$spacer: 2rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  // xxl: 1140px,
+);
+
 @import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/utilities';
 
 $navbar-dark-color: $white;
 $navbar-dark-hover-color: $white;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+$spacer: 2rem !default;
+
+.fs-18 {
+  font-size: 18px;
+}
 
 .navbar {
   backdrop-filter: blur(8px);
