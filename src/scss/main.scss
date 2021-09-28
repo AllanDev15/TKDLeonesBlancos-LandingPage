@@ -26,6 +26,15 @@ $container-max-widths: (
 $navbar-dark-color: $white;
 $navbar-dark-hover-color: $white;
 
+$blue-tkd: #358bd2;
+$red-tkd: #f14964;
+$yellow-tkd: #dcc327;
+
+$custom-colors: (
+  'blue-tkd': $blue-tkd,
+  'red-tkd': $red-tkd,
+  'yellow-tkd': $yellow-tkd,
+);
 
 $utilities: map-merge(
   $utilities,
@@ -39,7 +48,22 @@ $utilities: map-merge(
       ),
   )
 );
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    'background-color': (
+      property: background-color,
+      class: bg,
+      values: map-merge($theme-colors, $custom-colors),
+    ),
+  )
+);
+
 @import '../../node_modules/bootstrap/scss/utilities/api';
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 $spacer: 2rem !default;
 
