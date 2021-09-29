@@ -46,6 +46,11 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
+    'border-color': (
+      property: border-color,
+      class: border,
+      values: map-merge($theme-colors, $custom-colors),
+    ),
   )
 );
 
@@ -59,6 +64,13 @@ $utilities: map-merge(
       class: bg,
       values: map-merge($theme-colors, $custom-colors),
     ),
+    'color':
+      map-merge(
+        map-get($utilities, 'color'),
+        (
+          values: $custom-colors,
+        )
+      ),
   )
 );
 
