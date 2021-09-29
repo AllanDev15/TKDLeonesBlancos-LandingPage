@@ -16929,4 +16929,31 @@ p {
   }
 }
 
+.prices__price {
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+.prices__price:hover {
+  background-color: #f14964;
+}
+.prices__price:hover .prices__value, .prices__price:hover .prices__description {
+  color: #fff !important;
+}
+.prices__value-discount {
+  width: fit-content;
+  margin: 0 auto;
+}
+.prices__value-discount::after {
+  content: "";
+  width: 110%;
+  height: 5px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: inherit;
+  background-color: currentColor;
+}
+
 /*# sourceMappingURL=main.css.map */

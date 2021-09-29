@@ -68,7 +68,7 @@ $utilities: map-merge(
       map-merge(
         map-get($utilities, 'color'),
         (
-          values: $custom-colors,
+          values: map-merge($theme-colors, $custom-colors),
         )
       ),
   )
@@ -147,6 +147,41 @@ p {
     right: -150px;
     img {
       height: 200px;
+    }
+  }
+}
+
+.prices {
+  &__price {
+    height: 100%;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $red-tkd;
+    }
+    &:hover .prices__value,
+    &:hover .prices__description {
+      color: $white !important;
+    }
+  }
+
+  &__value {
+    &-discount {
+      width: fit-content;
+      margin: 0 auto;
+
+      &::after {
+        content: '';
+        width: 110%;
+        height: 5px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: inherit;
+        background-color: currentColor;
+      }
     }
   }
 }
