@@ -205,7 +205,7 @@ p {
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: $red-tkd;
+      background-color: $red-tkd !important;
     }
     &:hover .prices__value,
     &:hover .prices__description {
@@ -231,5 +231,25 @@ p {
         background-color: currentColor;
       }
     }
+  }
+}
+
+.class-days__days {
+  transition: background-color 0.2s ease-out;
+
+  &--active,
+  &:hover {
+    cursor: pointer;
+    background-color: #47a3ed;
+    color: $white;
+  }
+}
+
+.hours {
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 12px;
+    right: 0px;
+    padding-left: 0px;
   }
 }

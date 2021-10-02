@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taekwondo Leones Blancos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -54,62 +57,77 @@
         <a href="nosotros.html" class="btn btn-yellow-tkd">Más sobre nosotros</a>
       </div>
     </div>
-    <div class="bg-blue-tkd mb-6 py-6 px-2">
-      <section class="container mb-5 pt-3 pb-4 px-3 px-md-5  rounded-3 bg-light">
-        <h2 class="text-center m-0">Clases Presenciales</h2>
-        <div class="row justify-content-between">
-          <div class="col-12 col-lg-6">
-            <p class="mb-2 mt-3 fs-4 text-sm-center">Lunes, Miercoles y Viernes</p>
-            <div class="row g-2 g-sm-3">
-              <div class="col-sm-6 col-xl-6 d-flex">
-                <div
-                  class="schedule card py-2 px-3 py-sm-3 px-sm-2 w-100 shadow-sm flex-row flex-sm-column justify-content-between">
-                  <div class="schedule__hour text-center fw-bold border-bottom-sm pb-sm-2">5:00 -
-                    6:00
+
+    <section class="container pb-md-5 mb-6 mb-md-7">
+      <h2 class="mb-4">Clases Presenciales</h2>
+      <div class="row container m-0 p-0">
+        <div class="class-days col-md-6 d-none d-md-block">
+          <h3 class="h3 mb-3">Dias</h3>
+          <div class="row row-cols-2 flex-md-column">
+            <div class="col-md-11 col-xl-8">
+              <div id="classDays1"
+                class="class-days__days class-days__days--active p-2 p-lg-3 mb-md-5 border border-2 border-blue-tkd rounded-3 d-flex justify-content-between align-items-center">
+                <p class="h5 m-0">Lunes Miercoles y Viernes</p>
+                <i class="fs-4 fas fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="col-md-11 col-xl-8">
+              <div id="classDays2"
+                class="class-days__days p-2 p-lg-3 border border-2 border-blue-tkd rounded-3 d-flex justify-content-between align-items-center">
+                <p class="h5 m-0">Martes y Jueves</p>
+                <i class="fs-4 fas fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <h3 class="h3 mb-3 d-none d-md-block">Horarios</h3>
+          <h3 class="h3 mb-3 d-md-none">Lunes Miercoles y Viernes</h3>
+          <div id="classHours1">
+            <div class="hours row row-cols-sm-1 gy-2 mt-0">
+              <div class="d-flex mt-0">
+                <div class="schedule card py-2 px-2 px-lg-3 w-100 shadow-sm flex-row justify-content-between">
+                  <div class="schedule__hour text-center fw-bold">5:00 - 6:00
                     pm</div>
-                  <div class="mt-sm-2 text-center">
+                  <div class="text-center">
                     <p class="schedule__age">4 - 10 años</p>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-xl-6 d-flex">
-                <div
-                  class="schedule card py-2 px-3 py-sm-3 px-sm-2 w-100 shadow-sm flex-row flex-sm-column justify-content-between">
-                  <div class="schedule__hour text-center fw-bold border-bottom-sm pb-sm-2">6:00 - 7:00 pm</div>
-                  <div class="mt-sm-2 text-center">
+              <div class="d-flex">
+                <div class="schedule card py-2 px-2 px-lg-3 w-100 shadow-sm flex-row justify-content-between">
+                  <div class="schedule__hour text-center fw-bold">6:00 - 7:00 pm</div>
+                  <div class="text-center">
                     <p class="schedule__age">6 - 14 años</p>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-xl-6 d-flex">
-                <div
-                  class="schedule card py-2 px-3 py-sm-3 px-sm-2 w-100 shadow-sm flex-row flex-sm-column justify-content-between">
-                  <div class="schedule__hour text-center fw-bold border-bottom-sm pb-sm-2">7:00 - 8:00 pm</div>
-                  <div class="mt-sm-2 text-center">
+              <div class="d-flex">
+                <div class="schedule card py-2 px-2 px-lg-3 w-100 shadow-sm flex-row justify-content-between">
+                  <div class="schedule__hour text-center fw-bold">7:00 - 8:00 pm</div>
+                  <div class="text-center">
                     <p class="schedule__age">14 - 18 años</p>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-xl-6 d-flex">
-                <div
-                  class="schedule card py-2 px-3 py-sm-3 px-sm-2 w-100 shadow-sm flex-row flex-sm-column justify-content-between">
-                  <div class="schedule__hour text-center fw-bold border-bottom-sm pb-sm-2">8:00 - 9:00 pm</div>
-                  <div class="mt-sm-2 text-center">
+              <div class="d-flex">
+                <div class="schedule card py-2 px-2 px-lg-3 w-100 shadow-sm flex-row justify-content-between">
+                  <div class="schedule__hour text-center fw-bold">8:00 - 9:00 pm</div>
+                  <div class="text-center">
                     <p class="schedule__age">+16 años</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-lg-6">
-            <p class="mb-2 mt-4 mt-lg-3 fs-4 text-sm-center">Sabados y Domingos</p>
-            <div class="row g-2 g-sm-3 justify-content-center">
-              <div class="col-md-6 d-flex">
-                <div
-                  class="schedule card py-2 px-3 py-sm-3 px-sm-2 w-100 shadow-sm flex-row flex-sm-column justify-content-between">
-                  <div class="schedule__hour text-center fw-bold border-bottom-sm pb-sm-2">9:00 - 10:00 am</div>
-                  <div class="mt-sm-2 text-center">
+          <div id="classHours2" class="d-md-none">
+            <h3 class="h3 mt-4 mb-3 d-md-none">Martes y Jueves</h3>
+            <div class="hours row gy-2 mt-0">
+              <div class="d-flex mt-0">
+                <div class="schedule card py-2 px-2 px-lg-3 w-100 shadow-sm flex-row justify-content-between">
+                  <div class="schedule__hour text-center fw-bold">6:00 - 7:00
+                    pm</div>
+                  <div class="text-center">
                     <p class="schedule__age">4 - 10 años</p>
                   </div>
                 </div>
@@ -117,45 +135,28 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="container pt-3 pb-4 px-3 px-md-5 rounded-3 bg-light position-relative">
-        <h2 class="text-center">Clases En Linea</h2>
-        <p class="mb-2 mt-3 fs-3 text-sm-center">Martes y Jueves</p>
-        <div class="row g-2 g-sm-3 justify-content-center">
-          <div class="col-sm-6 col-xl-4 d-flex">
-            <div
-              class="schedule card py-2 px-3 py-sm-3 px-sm-2 w-100 shadow-sm flex-row flex-sm-column justify-content-between">
-              <div class="schedule__hour text-center fw-bold border-bottom-sm pb-sm-2">6:00 - 7:00 pm</div>
-              <div class="mt-sm-2 text-center">
-                <p class="schedule__age">4 - 10 años</p>
-              </div>
-            </div>
-          </div>
-          <div id="tkd-kid">
-            <img src="assets/img/tkd_boy.webp" alt="">
-          </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <section class="mb-6">
+    <section class="position-relative bg-light">
       <div class="container">
         <h2 class="text-center mb-3">Précios</h2>
-        <div class="prices row g-3 gy-md-0 gx-md-6">
-          <div class="col-12 col-sm-4">
-            <div class="prices__price p-3 text-center rounded border border-2 border-red-tkd">
+        <div class="prices row g-3 gy-md-0 gx-lg-6">
+          <div class="col-12 col-md-4">
+            <div class="prices__price bg-light p-3 text-center rounded border border-2 border-red-tkd">
               <p class="prices__description h5">Incripción</p>
               <p class="prices__value prices__value-discount position-relative mt-2 h1">$150</p>
               <p class="prices__value text-red-tkd fw-bold h3 m-0">Gratis</p>
             </div>
           </div>
-          <div class="col-6 col-sm-4">
-            <div class="prices__price p-3 text-center rounded border border-2 border-red-tkd">
+          <div class="col-6 col-md-4">
+            <div class="prices__price bg-light p-3 text-center rounded border border-2 border-red-tkd">
               <p class="prices__description h5">Mensualidad</p>
               <p class="prices__value mt-2 h1">$350</p>
             </div>
           </div>
-          <div class="col-6 col-sm-4">
-            <div class="prices__price p-3 text-center rounded border border-2 border-red-tkd">
+          <div class="col-6 col-md-4">
+            <div class="prices__price bg-light p-3 text-center rounded border border-2 border-red-tkd">
               <p class="prices__description h5">Uniforme</p>
               <p class="prices__value mt-2 h1">$600</p>
             </div>
@@ -166,6 +167,31 @@
   </main>
 
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    const classDays = document.querySelectorAll('.class-days__days');
+    const classDays1 = document.querySelector('#classDays1');
+    const classDays2 = document.querySelector('#classDays2');
+    const classHours1 = document.querySelector('#classHours1');
+    const classHours2 = document.querySelector('#classHours2');
+
+    classDays.forEach(days => {
+      days.addEventListener('click', () => {
+        if (days.id == 'classDays1') {
+          classDays2.classList.remove('class-days__days--active');
+          classDays1.classList.add('class-days__days--active');
+          classHours2.classList.add('d-md-none');
+          classHours1.classList.remove('d-md-none');
+        } else if (days.id == 'classDays2') {
+          classDays1.classList.remove('class-days__days--active');
+          classDays2.classList.add('class-days__days--active');
+          classHours1.classList.add('d-md-none');
+          classHours2.classList.remove('d-md-none');
+        }
+      })
+    })
+
+  </script>
 
 </body>
 
