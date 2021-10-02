@@ -8,7 +8,8 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 2,
-  6: $spacer * 2.5,
+  6: $spacer * 3,
+  7: $spacer * 4,
 );
 
 $container-max-widths: (
@@ -19,21 +20,15 @@ $container-max-widths: (
   // xxl: 1140px,
 );
 
-@import '../../node_modules/bootstrap/scss/variables';
-@import '../../node_modules/bootstrap/scss/mixins';
-@import '../../node_modules/bootstrap/scss/utilities';
-
-$navbar-dark-color: $white;
-$navbar-dark-hover-color: $white;
-
-$blue-tkd: #358bd2;
+$blue-tkd: #2586dc;
 $red-tkd: #f14964;
-$yellow-tkd: #dcc327;
+$yellow-tkd: #ffd166;
 
 $custom-colors: (
   'blue-tkd': $blue-tkd,
   'red-tkd': $red-tkd,
   'yellow-tkd': $yellow-tkd,
+  'white': #fff,
 );
 
 $utilities: map-merge(
@@ -64,13 +59,14 @@ $utilities: map-merge(
       class: bg,
       values: map-merge($theme-colors, $custom-colors),
     ),
-    'color':
-      map-merge(
-        map-get($utilities, 'color'),
-        (
-          values: map-merge($theme-colors, $custom-colors),
-        )
+    'color': (
+      property: color,
+      class: text,
+      local-vars: (
+        'text-opacity': 1,
       ),
+      values: map-merge($utilities-text-colors, $custom-colors),
+    ),
   )
 );
 
