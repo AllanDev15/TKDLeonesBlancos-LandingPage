@@ -31,6 +31,26 @@ $custom-colors: (
   'white': #fff,
 );
 
+@import '../../node_modules/bootstrap/scss/variables';
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/utilities';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/type';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/helpers';
+@import '../../node_modules/bootstrap/scss/card';
+@import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/navbar';
+@import '../../node_modules/bootstrap/scss/badge';
+@import '../../node_modules/bootstrap/scss/helpers/position';
+@import '../../node_modules/bootstrap/scss/transitions';
+
 $utilities: map-merge(
   $utilities,
   (
