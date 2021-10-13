@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="bg-light">
+<body class="bg-white">
   <header class="header vh-100 overflow-hidden">
     <div class="navbar navbar-expand-lg navbar-dark fixed-top px-2 px-md-6">
       <div class="d-flex justify-content-between w-100 flex-wrap">
@@ -43,37 +43,58 @@
 
   </header>
 
-  <main class="py-6 overflow-hidden">
-    <div class="container mb-6 mb-md-7">
-      <h2>¿Quienes somos?</h2>
-      <p class="fs-18">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sint assumenda recusandae
-        architecto
-        expedita, aliquid iusto earum ipsa, illo, totam deleniti fuga rerum. Explicabo minus nihil doloremque, nobis
-        enim ab?
-        Unde officia suscipit pariatur quas impedit consectetur minima praesentium amet ex optio ea perspiciatis, minus,
-        error hic dolores debitis voluptatum sit nihil tempore velit necessitatibus iusto! Aspernatur perferendis error
-        assumenda.</p>
-      <div class="d-flex justify-content-center mt-3">
-        <a href="nosotros.html" class="btn btn-yellow-tkd">Más sobre nosotros</a>
+  <main class="overflow-hidden">
+    <section class="bg-light">
+      <div class="container py-5 py-lg-6">
+        <div class="row gx-4">
+          <h2 class="mb-3">¿Quienes somos?</h2>
+          <div class="col-lg-9 mb-3 mb-lg-0">
+            <p class="fs-18">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sint assumenda
+              recusandae
+              architecto
+              expedita, aliquid iusto earum ipsa, illo, totam deleniti fuga rerum. Explicabo minus nihil doloremque,
+              nobis
+              enim ab?
+              Unde officia suscipit pariatur quas impedit consectetur minima praesentium amet ex optio ea perspiciatis,
+              minus,
+              error hic dolores debitis voluptatum sit nihil tempore velit necessitatibus iusto! Aspernatur perferendis
+              error
+              assumenda.</p>
+          </div>
+          <div class="col-lg-3 d-flex flex-column text-start justify-content-between">
+            <div>
+              <p class="mb-3 fs-18 text-blue-tkd fw-bold">17 años de experiencia</p>
+            </div>
+            <div>
+              <p class="mb-3 fs-18 text-blue-tkd fw-bold">Mas de 50 alumnos</p>
+            </div>
+            <div>
+              <p class="fs-18 text-blue-tkd fw-bold">Mas de 10 cintas negra</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+          <a href="nosotros.html" class="btn btn-yellow-tkd">Más sobre nosotros</a>
+        </div>
       </div>
-    </div>
-
-    <section class="container pb-md-5 mb-6 mb-md-7">
-      <h2 class="mb-4">Clases Presenciales</h2>
+    </section>
+    <hr class="container bg-blue-tkd my-0 mx-auto opacity-50 w-50">
+    <section class="container pb-6 pb-md-7 mb-0 mb-lg-6 pt-5 pt-lg-6">
+      <h2 class="mb-3">Clases Presenciales</h2>
       <div class="row container m-0 p-0">
-        <div class="class-days col-md-6 d-none d-md-block">
+        <div class="class-days col-md-6 d-none d-md-block p-0">
           <h3 class="h3 mb-3">Dias</h3>
           <div class="row row-cols-2 flex-md-column">
             <div class="col-md-11 col-xl-8">
               <div id="classDays1"
-                class="class-days__days class-days__days--active p-2 p-lg-3 mb-md-5 border border-2 border-blue-tkd rounded-3 d-flex justify-content-between align-items-center">
+                class="class-days__days class-days__days--active p-2 px-lg-3 py-lg-2 mb-md-5 border border-2 border-blue-tkd rounded-3 d-flex justify-content-between align-items-center">
                 <p class="h5 m-0">Lunes Miercoles y Viernes</p>
                 <i class="fs-4 fas fa-angle-right"></i>
               </div>
             </div>
             <div class="col-md-11 col-xl-8">
               <div id="classDays2"
-                class="class-days__days p-2 p-lg-3 border border-2 border-blue-tkd rounded-3 d-flex justify-content-between align-items-center">
+                class="class-days__days p-2 px-lg-3 py-lg-2 border border-2 border-blue-tkd rounded-3 d-flex justify-content-between align-items-center">
                 <p class="h5 m-0">Martes y Jueves</p>
                 <i class="fs-4 fas fa-angle-right"></i>
               </div>
@@ -138,7 +159,34 @@
       </div>
     </section>
 
-    <section class="position-relative bg-light">
+    <section class="online-lesson pb-5 pb-lg-6 container">
+      <div class="row gy-3 gy-lg-0 gx-3 justify-content-between">
+        <div class="col-12 col-lg-7">
+          <h2 class="mb-3">Clases en Linea</h2>
+          <p class="fs-18">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolore delectus doloremque,
+            beatae, cum expedita rerum ut quo cupiditate temporibus</p>
+          <div class="my-4 mt-lg-5 py-2 px-2 d-flex justify-content-between card flex-row">
+            <div class="d-flex align-items-center">
+              <p class="h5 m-0">Martes y Jueves</p>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+              <div class="schedule__hour me-1 me-lg-3 text-center fw-bold">6:00 - 7:00
+                pm</div>
+              <div class="text-center">
+                <p class="schedule__age">4 - 10 años</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="online-img overflow-hidden position-relative">
+            <img class="online-img__img" src="assets/img/online.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 position-relative bg-light">
       <div class="container">
         <h2 class="text-center mb-3">Précios</h2>
         <div class="prices row g-3 gy-md-0 gx-lg-6">
@@ -164,6 +212,18 @@
         </div>
       </div>
     </section>
+
+    <!-- <section>
+      <div class="parallax position-relative">
+        <div class="container text-center d-flex flex-column justify-content-center h-100">
+          <p class="text-white h2">Retate a ti mismo</p>
+          <p class="text-white h1">Asiste a tu primer clase gratis</p>
+          <a href="" class="align-self-center btn btn-yellow-tkd">Me interesa!</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="vh-100"></section>
   </main>
 
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

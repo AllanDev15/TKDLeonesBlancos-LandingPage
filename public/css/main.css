@@ -3826,6 +3826,34 @@ progress {
   }
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.figure {
+  display: inline-block;
+}
+
+.figure-img {
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.figure-caption {
+  font-size: 0.875em;
+  color: #6c757d;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -9274,6 +9302,10 @@ p {
   margin: 0px;
 }
 
+.container {
+  width: 95%;
+}
+
 .fs-18 {
   font-size: 18px;
 }
@@ -9300,7 +9332,22 @@ p {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, transparent 50%);
+    background: linear-gradient(110deg, #f8f9fa 53%, transparent 53%);
+  }
+}
+@media (min-width: 1200px) {
+  .header::after {
+    background: linear-gradient(110deg, #f8f9fa 65%, transparent 65%);
+  }
+}
+@media (min-width: 1400px) {
+  .header::after {
+    background: linear-gradient(110deg, #f8f9fa 57%, transparent 57%);
+  }
+}
+@media (min-width: 1500px) {
+  .header::after {
+    background: linear-gradient(110deg, #f8f9fa 53%, transparent 53%);
   }
 }
 
@@ -9423,6 +9470,7 @@ p {
   transition: background-color 0.2s ease-out;
 }
 .class-days__days--active, .class-days__days:hover {
+  cursor: pointer;
   background-color: #47a3ed;
   color: #fff;
 }
@@ -9433,6 +9481,38 @@ p {
     left: 12px;
     right: 0px;
     padding-left: 0px;
+  }
+}
+
+.online-img {
+  height: 100px;
+}
+@media (min-width: 768px) {
+  .online-img {
+    height: auto;
+  }
+}
+.online-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: linear-gradient(to top, #fff 5%, rgba(255, 255, 255, 0.4) 20%, transparent 90%);
+}
+@media (min-width: 768px) {
+  .online-img::after {
+    background: linear-gradient(to left, #fff 5%, rgba(255, 255, 255, 0.4) 20%, transparent 90%);
+  }
+}
+.online-img__img {
+  max-width: 114%;
+  object-position: -50px -40px;
+}
+@media (min-width: 768px) {
+  .online-img__img {
+    object-position: -55px 0px;
+    max-width: 123%;
   }
 }
 
