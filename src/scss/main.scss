@@ -24,7 +24,11 @@ $btn-padding-y: 0.5rem;
 $btn-padding-x: 1rem;
 $btn-font-size: 18px;
 
-$blue-tkd: #2586dc;
+$btn-padding-y-lg: 0.75rem;
+$btn-padding-x-lg: 1.5rem;
+$btn-font-size-lg: 18px;
+
+$blue-tkd: #47a3ed;
 $red-tkd: #f14964;
 $yellow-tkd: #ffd166;
 
@@ -284,11 +288,19 @@ p {
 .class-days__days {
   transition: background-color 0.2s ease-out;
 
+  i {
+    color: $blue-tkd;
+  }
+
   &--active,
   &:hover {
     cursor: pointer;
     background-color: #47a3ed;
     color: $white;
+
+    i {
+      color: $white;
+    }
   }
 }
 
